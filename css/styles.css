@@ -1,0 +1,361 @@
+@font-face {
+  font-family: "IRANYekanX VF";
+  src: url("/font/IRANYekanXVF.woff") format("woff-variations"),
+    url("/font/IRANYekanXVF.woff") format("woff"),
+    url("/font/IRANYekanXVF.woff2") format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/font/IRANYekanX-Light.woff2") format("woff2"),
+    url("/font/IRANYekanX-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/IRANYekanX-Regular.woff2") format("woff2"),
+    url("/font/IRANYekanX-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/font/IRANYekanX-Medium.woff2") format("woff2"),
+    url("/font/IRANYekanX-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/font/IRANYekanX-Bold.woff2") format("woff2"),
+    url("/font/IRANYekanX-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/font/IRANYekanX-ExtraBold.woff2") format("woff2"),
+    url("/font/IRANYekanX-ExtraBold.woff") format("woff");
+}
+
+body {
+  direction: rtl;
+  font-family: "IRANYekanX", Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+* ::after,
+* ::before {
+  box-sizing: border-box;
+}
+.body-section {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.navbartop {
+  padding: 1rem;
+  background-color: #0c97e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px rgb(207, 207, 207);
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.nav-left p {
+  color: #eee;
+  margin: 16px;
+}
+.nav-left p:nth-child(even) {
+  background-color: #eee;
+  padding: 10px 15px;
+  border-radius: 16px;
+  color: #0c97e9;
+}
+.nav-right {
+  display: flex;
+}
+.menu-top {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+}
+.menu-top-item {
+  color: white;
+  font-weight: 500;
+  padding: 16px;
+}
+.menu-top-item:hover {
+  color: white;
+  text-shadow: 0 0 3px #eee;
+}
+.buy-host {
+  margin: 50px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.buy-host img {
+  max-width: 100vw;
+  padding: 0 20px;
+}
+.buy-host-sec {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.buy-host-sec h1 {
+  font-weight: 700;
+  color: #0c97e9;
+  margin: 12px 16px;
+  font-size: 28px;
+}
+.buy-host-sec h2 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #0c97e9;
+  margin: 12px 16px;
+}
+.buy-host-sec p {
+  font-weight: 500;
+  color: #2b2b2b;
+  font-size: 14px;
+  line-height: 27px;
+  margin: 12px 16px;
+}
+.hamburger {
+  width: 40px;
+  display: none;
+}
+
+.all-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 100px;
+}
+.product-title {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #474747;
+  text-align: center;
+}
+.product {
+  border: 1px solid #afafaf;
+  width: 350px;
+  height: 430px;
+  border-radius: 15px;
+  margin: 0 25px 40px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #2b2b2b;
+}
+.badge {
+  background-color: #0c97e9;
+  position: absolute;
+  top: -20px;
+  width: 180px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.product-info {
+  position: absolute;
+  top: 35px;
+  font-size: 16px;
+  padding: 20px;
+  color: aliceblue;
+  line-height: 27px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.cloud-product {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2b2b2b;
+}
+.title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+}
+.title2 {
+  color: #ffffff;
+  font-weight: 500;
+  padding-top: 20px;
+  font-size: 18px;
+}
+.cloud-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cloud-items {
+  background-color: #0c97e9;
+  width: 25%;
+  display: flex;
+  margin: 25px;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  position: relative;
+}
+.cloud-items:hover {
+  box-shadow: 0 0 50px #0c97e9;
+}
+.cloud-items img {
+  width: 35%;
+}
+.cloud-items .cloud-item-desc {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: justify;
+  line-height: 27px;
+}
+.order-cloud {
+  background-color: #eee;
+  padding: 10px 25px;
+  color: #0c97e9;
+  position: absolute;
+  bottom: -20px;
+  border-radius: 25px;
+}
+.order-cloud:hover {
+  box-shadow: 0 0 10px #ffffff;
+}
+.title-item-cloud {
+  font-size: 18px;
+  margin: 12px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #2b2b2b;
+  padding: 20px;
+}
+.ul-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ul-footer li {
+  font-size: 18px;
+  color: #ffffff;
+  list-style-type: none;
+  margin: 0 30px;
+}
+.ul-footer img {
+  width: 64px;
+}
+
+@media screen and (max-width: 800px) {
+  .buy-host {
+    flex-direction: column;
+  }
+  .buy-host-sec {
+    order: 2;
+  }
+  .nav-right li {
+    font-size: small;
+    flex-grow: 1;
+  }
+  .nav-right li {
+    font-size: small;
+    flex-grow: 1;
+  }
+  .nav-left p {
+    display: none;
+  }
+  .nav-right ul {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .buy-host-sec h1 {
+    margin: 8px 4px;
+    font-size: 26px;
+  }
+  .buy-host-sec h2 {
+    font-size: 20px;
+    margin: 4px 4px;
+  }
+  .buy-host-sec p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 4px 4px;
+  }
+  .product-title {
+    margin: 5px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #474747;
+    text-align: center;
+  }
+
+  .all-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+  .product {
+    border: 1px solid #afafaf;
+    width: 50%;
+    height: 430px;
+    border-radius: 15px;
+    margin: 0 25px 40px 0;
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    background-color: #2b2b2b;
+  }
+  .badge {
+    background-color: #0c97e9;
+    position: absolute;
+    top: -35px;
+    width: 180px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 25px;
+  }
+}
